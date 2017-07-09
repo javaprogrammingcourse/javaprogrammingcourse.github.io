@@ -1,0 +1,225 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #424E56;
+  font-size: 12px;
+}
+
+nav{
+  width: 1165px;
+  height: auto;
+  margin: 50px auto 0px;
+  border: 1px solid #E5E5E5;
+}
+
+a{
+  color: #424E56;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #109DFF;
+}
+
+.backbtn{
+  display: block;
+  width: 120px;
+  height: 35px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  border: 1px solid #7DCAFF;
+  background-color: #EFF9FF;
+  color: #3BAFFF;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 35px;
+}
+
+.backbtn:hover{
+  background-color: #EAF6FF;
+  color: #3BAFFF;
+}
+
+.backbtn:active{
+  background-color: #E1F3FF;
+}
+
+
+.mainmenu{
+  display: flex;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.mainmenu > li{
+  flex-grow: 1;
+}
+
+.mainmenu > li > a{
+  display: block;
+  color: #424E56;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.mainmenu > li > a:hover{
+  color: #109DFF;
+  border-left: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+}
+
+/*.mainmenu > li > a:hover::before{
+  content: "";
+  height: 65px;
+  width: auto;
+  background-color: white;
+  position: relative;
+  z-index: 20;
+  display: block;
+}*/
+
+.mainmenu > li:first-child > a:hover{
+  border-left: 1px solid white;
+  border-right: 1px solid #E5E5E5;
+}
+
+.mainmenu > li:last-child > a:hover{
+  border-left: 1px solid #E5E5E5;
+  border-right: 1px solid white;
+}
+
+.hiden{
+  display: none;
+  margin: -1px auto 0px;
+  padding: 0;
+  position: absolute;
+  top: 111px;
+  width: 1165px;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.28);
+  z-index: 10;
+  background-color: white;
+}
+
+.mainmenu > li:hover .hiden{
+  display: block;
+  width: 1165px;
+  left: 50%;
+  margin-left: -583px;
+}
+
+.submenu{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+  line-height: initial;
+  vertical-align: initial;
+  justify-content: flex-start;
+}
+
+.submenu > li{
+  width: 201px;
+  margin-right: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.submenu > li:nth-child(5n+1){
+  padding-left: 30px;
+}
+
+.submenu > li:nth-child(-n+5){
+  padding-top: 19px;
+}
+
+.submenu > li:last-child{
+  padding-bottom: 20px;
+  width: 600px;
+}
+
+.submenu > li > a{
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.categories{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li{
+  padding-bottom: 5px;
+}
+
+.info{
+  text-align: initial;
+  line-height: initial;
+  vertical-align: initial;
+  margin: 0;
+}
+
+.info h3{
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.flexdivforinfo{
+  display: flex;
+  align-items: flex-end;
+}
+
+.flexdivforinfo p{
+  color: #A1A1A1;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.flexdivforinfo span{
+  color: #424E56;
+  font-weight: 600;
+}
+
+.flexdivforinfo button{
+  width: 125px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #FFDE00;
+  color: #424E56;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-left: 60px;
+}
+
+.flexdivforinfo button:focus {
+  outline: none;
+}
+
+.flexdivforinfo button:hover{
+  background-color: #F8D800;
+}
+
+.flexdivforinfo button:active{
+  background-color: #F3D300;
+}
