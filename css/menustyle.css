@@ -14,37 +14,12 @@ nav{
 a{
   color: #424E56;
   text-decoration: none;
+  z-index: 9999;
 }
 
 a:hover{
   color: #109DFF;
 }
-
-.backbtn{
-  display: block;
-  width: 120px;
-  height: 35px;
-  position: absolute;
-  right: 50px;
-  top: 50px;
-  border: 1px solid #7DCAFF;
-  background-color: #EFF9FF;
-  color: #3BAFFF;
-  border-radius: 4px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 35px;
-}
-
-.backbtn:hover{
-  background-color: #EAF6FF;
-  color: #3BAFFF;
-}
-
-.backbtn:active{
-  background-color: #E1F3FF;
-}
-
 
 .mainmenu{
   display: flex;
@@ -59,7 +34,43 @@ a:hover{
 
 .mainmenu > li{
   flex-grow: 1;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  display: block;
 }
+
+.mainmenu > li:hover{
+  display: block;
+  border-left: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+}
+
+.mainmenu > li:hover:first-child{
+  border-right: 1px solid #E5E5E5;
+}
+
+.mainmenu > li:hover:last-child{
+  border-left: 1px solid #E5E5E5;
+}
+
+.mainmenu > li:hover::after{
+  content: "";
+  height: 5px;
+  width: auto;
+  background-color: white;
+  position: relative;
+  top: -4px;
+  display: block;
+  z-index: 50;
+}
+
+/*.mainmenu > li > div > a{
+  display: block;
+  color: #424E56;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+}*/
 
 .mainmenu > li > a{
   display: block;
@@ -67,35 +78,23 @@ a:hover{
   font-size: 11px;
   font-weight: 600;
   text-decoration: none;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
 }
 
-.mainmenu > li > a:hover{
+/*.underall > a{
+  display: block;
+  color: #424E56;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.underall > a:hover{
+  position: relative;
   color: #109DFF;
-  border-left: 1px solid #E5E5E5;
-  border-right: 1px solid #E5E5E5;
-}
-
-/*.mainmenu > li > a:hover::before{
-  content: "";
   height: 65px;
   width: auto;
   background-color: white;
-  position: relative;
-  z-index: 20;
-  display: block;
 }*/
-
-.mainmenu > li:first-child > a:hover{
-  border-left: 1px solid white;
-  border-right: 1px solid #E5E5E5;
-}
-
-.mainmenu > li:last-child > a:hover{
-  border-left: 1px solid #E5E5E5;
-  border-right: 1px solid white;
-}
 
 .hiden{
   display: none;
@@ -106,7 +105,6 @@ a:hover{
   width: 1165px;
   border: 1px solid #E5E5E5;
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.28);
-  z-index: 10;
   background-color: white;
 }
 
@@ -115,6 +113,7 @@ a:hover{
   width: 1165px;
   left: 50%;
   margin-left: -583px;
+  z-index: 10;
 }
 
 .submenu{
@@ -222,4 +221,29 @@ a:hover{
 
 .flexdivforinfo button:active{
   background-color: #F3D300;
+}
+
+.backbtn{
+  display: block;
+  width: 120px;
+  height: 35px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  border: 1px solid #7DCAFF;
+  background-color: #EFF9FF;
+  color: #3BAFFF;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 35px;
+}
+
+.backbtn:hover{
+  background-color: #EAF6FF;
+  color: #3BAFFF;
+}
+
+.backbtn:active{
+  background-color: #E1F3FF;
 }
