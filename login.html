@@ -6,6 +6,22 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   </head>
   <body>
+      <article class="loginform">
+        <a class="Logolink" href="index.html"><img class="logogrey" src="img/Logo-grey.svg" alt="FingerPrint"></a>
+        <h1 class="maindescription">Здравствуйте! Приступим к работе?</h1>
+        <p class="subdescription">Чтобы войти в свой аккаунт укажите логин и пароль ниже</p>
+        <form class="loginform" action="/echo" method="post">
+          <input type="email" id="email" name="lgemail" placeholder="укажите e-mail" required>
+          <input type="password" id="pass" name="lgpassword" placeholder="укажите пароль" required>
+          <a class="fogotpass" href="#">Забыли пароль?</a>
+          <input type="submit" value="Войти">
+        </form>
+        <p class="socialtext">или используйте соцсети</p>
+        <div class="socialbtn">
+          <button class="google" type="socilabutton" name="google"></button>
+          <button class="facebook" type="socilabutton" name="facebook"><img src="img/Facebook.svg" alt="Войти через Facebook"></button>
+        </div>
 
+      </article>
   </body>
 </html>
