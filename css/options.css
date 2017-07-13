@@ -1,0 +1,67 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.switch{
+  width: 500px;
+  margin: 66px auto;
+  /*background-color: grey;*/
+}
+
+.krugliy{
+  display: none;
+}
+
+.labelforclick{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 47px;
+  height: 26px;
+  border: 2px solid #E0E6ED;
+  box-sizing: border-box;
+  border-radius: 26px;
+  background: white;
+}
+
+.labelforclick::before{
+  content: "";
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border-radius: 18px;
+  border: 2px solid #E0E6ED;
+  background: #EFF2F7;
+  transition: margin 0.4s, background 0.4s, border 0.4s;
+}
+
+.labelforclick::after{
+  content: "";
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  box-sizing: border-box;
+  width: 47px;
+  height: 26px;
+  border: 2px solid #E0E6ED;
+  box-sizing: border-box;
+  border-radius: 26px;
+  transition: border 0.4s;
+}
+
+.krugliy:checked + .labelforclick::before {
+  margin-left: 21px;
+  border: 2px solid #3C4858;
+  background: #FC4F1B;
+}
+
+.krugliy:checked + .labelforclick::after {
+  border: 2px solid #3C4858;
+}
