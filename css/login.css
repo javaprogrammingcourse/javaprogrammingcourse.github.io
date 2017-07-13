@@ -220,3 +220,52 @@ button[type="socilabutton"]:hover{
   color: #D2DCE7;
   font-weight: 400;
 }
+
+.closebtn{
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background: #EFF2F7;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  right: 20%;
+  top: 60px;
+}
+
+.closebtn:hover{
+  background: #E9EDF5;
+}
+
+.closebtn:active{
+  background: #E1E8F3;
+}
+
+.closebtn:focus{
+  outline: none;
+}
+
+.horizontal{
+  background: #8492A6;
+  border: none;
+  width: 14px;
+  height: 2px;
+  margin: 0 auto;
+  padding: 0;
+  transform: rotate(45deg);
+}
+
+.vertical{
+  position: absolute;
+  background: #8492A6;
+  border: none;
+  width: 14px;
+  height: 2px;
+  transform: rotate(135deg);
+  margin: 0 auto;
+  padding: 0;
+  left: 12px;
+  bottom: 18px;
+}
