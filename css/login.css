@@ -123,7 +123,8 @@ input[type="submit"]:active{
   justify-content: center;
 }
 
-.socialtext::before{
+.socialtext::before,
+.socialtext::after{
   content: "";
   height: 1px;
   width: 60px;
@@ -136,15 +137,7 @@ input[type="submit"]:active{
 }
 
 .socialtext::after{
-  content: "";
-  height: 1px;
-  width: 60px;
-  border: 1px solid #E0E6ED;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   margin-left: 20px;
-  margin-top: 9px;
 }
 
 .socialbtn{
@@ -159,19 +152,55 @@ button[type="socilabutton"]{
   border-radius: 4px;
   border: 1px solid #E0E6ED;
   cursor: pointer;
-  /*background-color: white;*/
-  background: grey url("img/Google.svg") no-repeat;
+  background-color: white;
 }
 
 button[type="socilabutton"]:focus{
   outline: none;
 }
 
-.google:hover{
-  background-color: #DE4D3C;
-  border: none;
+button[type="socilabutton"]:hover{
+  border: 1px solid #CCF0FF;
+  box-shadow: 0px 0px 17px 0px rgba(154,226,255,0.5);
+}
+
+.google{
+  background: url(../img/Google.svg) no-repeat center;
 }
 
 .google:active{
+  background: #F7FCFE url(../img/Google.svg) no-repeat center;
+}
 
+.facebook{
+  background: url(../img/Facebook.svg) no-repeat center;
+}
+
+.facebook:active{
+  background: #F7FCFE url(../img/Facebook.svg) no-repeat center;
+}
+
+.endtext{
+  color: #8492A6;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 55px;
+}
+
+.createacc{
+  color: #00B5FF;
+  text-decoration: none;
+}
+
+.createacc:hover{
+  color: #3DC7FF;
+}
+
+.createacc:active{
+  color: #00ADF3;
+}
+
+.ps{
+  color: #D2DCE7;
+  font-weight: 400;
 }
