@@ -36,7 +36,7 @@ input {
   border-radius: 4px;
   width: 480px;
   height: 55px;
-  padding: 0 20px;
+  padding: 0 20px 0 62px;
   color: #8492A6;
   font-size: 13px;
   font-weight: 600;
@@ -72,10 +72,24 @@ input:focus{
 
 input[type="email"]{
   margin-bottom: 15px;
+  background: url(../img/close-envelope-grey.svg) no-repeat;
+  background-position: 20px 50%;
 }
 
 input[type="password"]{
   margin-bottom: 5px;
+  background: url(../img/padlock-grey.svg) no-repeat;
+  background-position: 20px 50%;
+}
+
+input[type="email"]:focus{
+  background: url(../img/close-envelope-blue.svg) no-repeat;
+  background-position: 20px 50%;
+}
+
+input[type="password"]:focus{
+  background: url(../img/padlock-blue.svg) no-repeat;
+  background-position: 20px 50%;
 }
 
 .fogotpass{
@@ -104,6 +118,8 @@ input[type="submit"]{
   border: none;
   cursor: pointer;
   margin-bottom: 20px;
+  text-align: center;
+  padding: 0;
 }
 
 input[type="submit"]:hover{
