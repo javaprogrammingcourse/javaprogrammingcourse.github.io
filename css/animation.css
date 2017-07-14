@@ -1,0 +1,36 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  width: 1000px;
+  margin: auto;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 400;
+  color: #e5e5e5;
+}
+
+.round{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: #00eeb3;
+  transition-property: height, width, background, margin, border-radius;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+.round:hover{
+  width: 155px;
+  height: 155px;
+  background: #00ffc0;
+  cursor: pointer;
+}
+
+.round:active{
+  width: 155px;
+  height: 155px;
+  background: #ee5700;
+  margin-left: 800px;
+  border-radius: 5px;
+}
