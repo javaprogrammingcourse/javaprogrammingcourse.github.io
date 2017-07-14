@@ -136,3 +136,42 @@ h3{
     background: #D1FFA2;
   }
 }
+
+.bob{
+  height: 40px;
+  width: 40px;
+  background: #38C0FF;
+  display: block;
+  border-radius: 40px;
+  animation: zamper 4s ease;
+}
+
+@keyframes zamper{
+  0%{
+    height: 40px;
+  }
+  8.33%{
+    height: 120px;
+  }
+  16.66%{
+    transform: translateY(-120px);
+  }
+  24.99%{
+    transform: translateY(-120px);
+    height: 40px;
+  }
+  33.32%{
+    transform: translateY(-120px);
+    height: 40px;
+    background-color: #F8E71C;
+  }
+  41.65%{
+    transform: translateY(-120px);
+    width: 120px;
+  }
+  49.98%{
+    transform: translateX(120px);
+    transform: translateY(-120px);
+    width: 40px;
+  }
+}
