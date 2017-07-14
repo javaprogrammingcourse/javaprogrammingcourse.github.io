@@ -2,12 +2,19 @@ body{
   font-family: 'Open Sans', sans-serif;
   width: 1000px;
   margin: auto;
+  position: relative;
 }
 
 h3{
   font-size: 24px;
   font-weight: 400;
   color: #e5e5e5;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .round{
@@ -33,4 +40,99 @@ h3{
   background: #ee5700;
   margin-left: 800px;
   border-radius: 5px;
+}
+
+.rectang{
+  width: 20px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+  margin-top: 60px;
+  margin-right: 20px;
+  background: #e5e5e5;
+  opacity: 0.5;
+  transition: opacity .3s, margin .3s ease;
+  float: left;
+}
+
+.one:active{
+  background: #D1FFA2;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.two:active{
+  background: #FFA6A6;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.three:active{
+  background: #88D9FF;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.cube{
+  width: 50px;
+  height: 50px;
+  /*cursor: pointer;*/
+  margin-bottom: 15px;
+  margin-top: 15px;
+  /*background: #e5e5e5;*/
+  opacity: 0;
+}
+
+.one1{
+  margin-top: 200px;
+  animation: rising .6s ease, color1;
+  animation-fill-mode: forwards;
+}
+
+.two2{
+  animation: rising .6s ease, color2;
+  animation-fill-mode: forwards;
+  animation-delay: .4s;
+}
+
+.three3{
+  animation: rising .6s ease, color3;
+  animation-fill-mode: forwards;
+  animation-delay: .8s;
+}
+
+@keyframes rising {
+  0%{
+    transform: translate(0);
+    width: 50px;
+    opacity: 0;
+    }
+  50%{
+    transform: translateY(-200px);
+    width: 50px;
+    opacity: .5;
+    }
+  100%{
+    transform: translateY(-200px);
+    width: 500px;
+    opacity: 1;
+  }
+}
+
+@keyframes color1{
+  100%{
+    background: #88D9FF;
+  }
+}
+
+@keyframes color2{
+  100%{
+    background: #FFA6A6;
+  }
+}
+
+@keyframes color3{
+  100%{
+    background: #D1FFA2;
+  }
 }
