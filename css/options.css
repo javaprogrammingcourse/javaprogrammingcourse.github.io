@@ -2,10 +2,24 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.switch{
-  width: 500px;
+.options{
+  width: 1055px;
   margin: 66px auto;
-  /*background-color: grey;*/
+  border: 1px solid #DBE6EE;
+  border-radius: 4px;
+  padding: 23px 28px;
+}
+
+.swichers{
+  float: left;
+  margin-right: 210px;
+  width: 370px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .krugliy{
@@ -22,6 +36,9 @@ body{
   box-sizing: border-box;
   border-radius: 26px;
   background: white;
+  float: left;
+  margin-top: 5px;
+  margin-right: 8px;
 }
 
 .labelforclick::before{
@@ -64,4 +81,92 @@ body{
 
 .krugliy:checked + .labelforclick::after {
   border: 2px solid #3C4858;
+}
+
+h3{
+  color: #3C4858;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  color: #8492A6;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.foroption{
+  margin-top: 29px;
+}
+
+.foroption:first-child{
+  margin-top: 0;
+}
+
+.tochka{
+  display: none;
+}
+
+.labelfortochka{
+  cursor: pointer;
+  /*display: block;*/
+  height: 20px;
+  width: 20px;
+  box-sizing: border-box;
+  border: 2px solid #3C4858;
+  border-radius: 20px;
+  background-color: #F5F5F5;
+  float: left;
+  margin-top: 7px;
+  margin-right: 8px;
+}
+
+.labelfortochka::before{
+  content: "";
+  display: block;
+  cursor: pointer;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+.tochka:checked + .labelfortochka::before {
+  background: #50E3C2;
+  transform: scale(1);
+}
+
+.backbtn{
+  position: relative;
+  margin-top: 50px;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  width: 120px;
+  height: 35px;
+  border: 1px solid #7DCAFF;
+  background-color: #EFF9FF;
+  color: #3BAFFF;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 35px;
+}
+
+.backbtn:hover{
+  background-color: #EAF6FF;
+  color: #3BAFFF;
+}
+
+.backbtn:active{
+  background-color: #E1F3FF;
 }
