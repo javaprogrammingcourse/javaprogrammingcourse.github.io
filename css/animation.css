@@ -308,3 +308,31 @@ h3{
     width: 40px;
   }
 }
+
+.backbtn{
+  position: relative;
+  margin-top: 50px;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  width: 120px;
+  height: 35px;
+  border: 1px solid #7DCAFF;
+  background-color: #EFF9FF;
+  color: #3BAFFF;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 35px;
+}
+
+.backbtn:hover{
+  background-color: #EAF6FF;
+  color: #3BAFFF;
+}
+
+.backbtn:active{
+  background-color: #E1F3FF;
+}
