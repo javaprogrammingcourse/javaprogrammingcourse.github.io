@@ -3,67 +3,78 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  background: url(../img/bcg.png);
 }
-.test {
-  background-color: #e5e5e5;
-  width: 1165px;
-  height: 2000px;
-  margin: auto;
+.subscrb {
+  display: block;
+  background: url(../img/subscribe.svg), no-repeat;
+  width: 1176px;
+  height: 2300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -588px;
 }
-.overlay {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+.link {
+  display: block;
+  width: 180px;
+  height: 50px;
+  border: 1px solid #e669ff;
+  background-color: #f8d7ff;
+  color: #bd10e0;
+  font-size: 11px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  font-weight: 600;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -90px;
+  position: absolute;
+  z-index: 5;
+}
+.link:hover {
+  background-color: #f7cfff;
+}
+.link:active {
+  background-color: #f5c8ff;
+}
+.podlojka {
   display: none;
-  background-color: rgba(0, 0, 0, 0.65);
+  left: 0;
+  top: 0;
   position: fixed;
+  height: 100%;
+  width: 100%;
   cursor: default;
+  z-index: 10;
+  animation: highlight .3s ease;
+  animation-fill-mode: forwards;
 }
-.overlay:target {
+@keyframes highlight {
+  100% {
+    background-color: rgba(59, 59, 59, 0.19);
+  }
+}
+.podlojka:target {
   display: block;
 }
-.popup {
-  top: -100%;
-  right: 0;
-  left: 50%;
-  z-index: 20;
-  margin: 0;
-  width: 85%;
-  min-width: 320px;
-  max-width: 600px;
-  position: fixed;
-  padding: 15px;
-  border: 1px solid #383838;
-  background: #fefefe;
-  border-radius: 4px;
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22), 0 19px 60px rgba(0, 0, 0, 0.3);
-  transform: translate(-50%, -500%);
-  transition: transform 0.6s ease-out;
-}
-.overlay:target + .popup {
-  transform: translate(-50%, 0);
-  top: 20%;
-}
-.close {
-  top: -10px;
-  right: -10px;
-  width: 20px;
-  height: 20px;
+.modalwin {
   position: absolute;
-  padding: 0;
-  border: 2px solid #ccc;
-  border-radius: 15px;
-  background-color: rgba(61, 61, 61, 0.8);
-  box-shadow: 0px 0px 10px #000;
-  text-align: center;
-  text-decoration: none;
-  transition: all ease .8s;
+  left: 50%;
+  top: -500px;
+  margin-left: -260px;
+  height: 383px;
+  width: 520px;
+  border: 1px solid #E2E2E2;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 5px 10px 25px 0px rgba(23, 23, 23, 0.5);
+  z-index: 20;
+  transition: margin .3s ease;
 }
-.close:before {
-  color: rgba(255, 255, 255, 0.9);
-  content: "X";
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
-  font-size: 12px;
+.podlojka:target + .modalwin {
+  margin-top: 700px;
 }
