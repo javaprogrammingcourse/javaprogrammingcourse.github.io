@@ -1,21 +1,17 @@
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
-
-.grey{
+.grey {
   background-color: lightgrey;
 }
-
-.black{
+.black {
   background: black;
   color: white;
 }
-
-.height{
+.height {
   height: 200px;
   background-color: green;
 }
-
-.cntr{
+.cntr {
   text-align: center;
 }
