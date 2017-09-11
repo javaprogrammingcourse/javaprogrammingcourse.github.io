@@ -15,3 +15,21 @@ body {
 .cntr {
   text-align: center;
 }
+.rectangle {
+  width: 550px;
+  height: 250px;
+  display: block;
+  background-color: #F7F7F7;
+}
+.top-left {
+  background-color: #F7F7F7;
+}
+.top-right {
+  background-color: #dedede;
+}
+.bottom-left {
+  background-color: #d1d1d1;
+}
+.bottom-right {
+  background-color: #c4c4c4;
+}
